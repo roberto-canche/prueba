@@ -1,17 +1,187 @@
-<!DOCTYPE HTML>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>PhoneGap Primer Ejemplo</title>
-<script src="phonegap-1.1.0.js"></script>
-<script>
-document.addEventListener("deviceready", function() {
-	// Estamos listos para ejecutar cualquier función de PhoneGap
-}, false);
-</script>
-</head>
+<!DOCTYPE html>  
+<html>  
+<head>  
+  <meta charset="utf-8">  
+  <title>Top Hub</title>  
+  <meta name="viewport" content="width=device-width, initial-scale=1" />  
+  <link rel="stylesheet" href="css/jquery.mobile-1.3.2.css" />  
+  <link rel="stylesheet" href="css/estilos.css" />
+  <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>  
+  <script type="text/javascript" src="js/jquery.mobile-1.3.2.min.js"></script> 
+</head> 
 
-<body>
-Bienvenidos a mi aplicación móvil para Android
-</body>
+<body>  
+	<div data-role="page" id="page">  
+    	<div data-role="header">
+            <h1><a href="index.html" class="ui-btn-center"><img src="img/logo-hub-tmre.jpg" alt="Top Hub Logo"/></a></h1>
+			<ul class="nav-bar">
+				<li><a href="#emails"><span class="email"></span>emails</a></li>
+				<li><a href="#notes"><span class="notes"></span>notes</a></li>
+				<li><a href="#tasks"><span class="task"></span>tasks</a></li>
+				<li><a href="#requests"><span class="request"></span>requests</a></li>
+			</ul>
+        </div>  
+ 
+		<div data-role="content">  
+			  
+		</div> 
+
+		<div data-role="footer" data-theme="b" data-position="fixed"> 
+			<div class="pie">
+				<div class="logo-pie"><img src="img/logo-topclosinghub.png" alt="Top Hub"/></div>
+				<div>
+					<p>Help & Support</p>
+					<p>About</p>
+					<p>Logout</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div data-role="page" id="emails">  
+    	<div data-role="header">
+            <h1><a href="index.html" class="ui-btn-center"><img src="img/logo-hub-tmre.jpg" alt="Top Hub Logo"/></a></h1>
+			<ul class="nav-bar">
+				<li><a href="#emails"><span class="email"></span>emails</a></li>
+				<li><a href="#notes"><span class="notes"></span>notes</a></li>
+				<li><a href="#tasks"><span class="task"></span>tasks</a></li>
+				<li><a href="#requests"><span class="request"></span>requests</a></li>
+			</ul>
+        </div>  
+ 
+		<div data-role="content">  
+			 <div class="e-mails">
+			 	<ul data-role="listview">
+			 		<li>
+						<a href="#">
+							<img src="img/favicon.ico" class="ui-li-icon" alt=""/>
+							<h3>mail@topmre.com</h3>
+							<p>TopMRE: This is a perhaps the nicest gated community in Playa del Carmen...</p>
+							<p class="ui-li-aside"><strong>12/12/2013</strong></p>
+						</a>
+					</li>
+			 		<li>
+						<a href="#">
+							<img src="img/favicon.ico" class="ui-li-icon" alt=""/>
+							<h3>mail@topmre.com</h3>
+							<p>TopMRE: This is a perhaps the nicest gated community in Playa del Carmen...</p>
+							<p class="ui-li-aside"><strong>12/12/2013</strong></p>
+						</a>
+					</li>
+			 		<li>
+						<a href="#">
+							<img src="img/favicon.ico" class="ui-li-icon" alt=""/>
+							<h3>mail@topmre.com</h3>
+							<p>TopMRE: This is a perhaps the nicest gated community in Playa del Carmen...</p>
+							<p class="ui-li-aside"><strong>12/12/2013</strong></p>
+						</a>
+					</li>
+			 		<li>
+						<a href="#">
+							<img src="img/favicon.ico" class="ui-li-icon" alt=""/>
+							<h3>mail@topmre.com</h3>
+							<p>TopMRE: This is a perhaps the nicest gated community in Playa del Carmen...</p>
+							<p class="ui-li-aside"><strong>12/12/2013</strong></p>
+						</a>
+					</li>
+			 	</ul>
+			 </div>
+		</div> 
+
+		<div data-role="footer" data-theme="b" data-position="fixed"> 
+			<div class="pie">
+				<div class="logo-pie"><img src="img/logo-topclosinghub.png" alt="Top Hub"/></div>
+				<div>
+					<p>Help & Support</p>
+					<p>About</p>
+					<p>Logout</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div data-role="page" id="notes">  
+    	<div data-role="header">
+            <h1><a href="index.html" class="ui-btn-center"><img src="img/logo-hub-tmre.jpg" alt="Top Hub Logo"/></a></h1>
+			<ul class="nav-bar">
+				<li><a href="#emails"><span class="email"></span>emails</a></li>
+				<li><a href="#notes"><span class="notes"></span>notes</a></li>
+				<li><a href="#tasks"><span class="task"></span>tasks</a></li>
+				<li><a href="#requests"><span class="request"></span>requests</a></li>
+			</ul>
+        </div>  
+ 
+		<div data-role="content">  
+			 Pagina principal de Notes
+		</div> 
+
+		<div data-role="footer" data-theme="b" data-position="fixed"> 
+			<div class="pie">
+				<div class="logo-pie"><img src="img/logo-topclosinghub.png" alt="Top Hub"/></div>
+				<div>
+					<p>Help & Support</p>
+					<p>About</p>
+					<p>Logout</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div data-role="page" id="tasks">  
+    	<div data-role="header">
+            <h1><a href="index.html" class="ui-btn-center"><img src="img/logo-hub-tmre.jpg" alt="Top Hub Logo"/></a></h1>
+			<ul class="nav-bar">
+				<li><a href="#emails"><span class="email"></span>emails</a></li>
+				<li><a href="#notes"><span class="notes"></span>notes</a></li>
+				<li><a href="#tasks"><span class="task"></span>tasks</a></li>
+				<li><a href="#requests"><span class="request"></span>requests</a></li>
+			</ul>
+        </div>  
+ 
+		<div data-role="content">  
+			 <div class="tareas">
+				<h5>All Tasks</h5>
+				<div></div>
+			 </div>
+		</div> 
+
+		<div data-role="footer" data-theme="b" data-position="fixed"> 
+			<div class="pie">
+				<div class="logo-pie"><img src="img/logo-topclosinghub.png" alt="Top Hub"/></div>
+				<div>
+					<p>Help & Support</p>
+					<p>About</p>
+					<p>Logout</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div data-role="page" id="requests">  
+    	<div data-role="header">
+            <h1><a href="index.html" class="ui-btn-center"><img src="img/logo-hub-tmre.jpg" alt="Top Hub Logo"/></a></h1>
+			<ul class="nav-bar">
+				<li><a href="#emails"><span class="email"></span>emails</a></li>
+				<li><a href="#notes"><span class="notes"></span>notes</a></li>
+				<li><a href="#tasks"><span class="task"></span>tasks</a></li>
+				<li><a href="#requests"><span class="request"></span>requests</a></li>
+			</ul>
+        </div>  
+ 
+		<div data-role="content">  
+			 Pagina principal de requests
+		</div> 
+
+		<div data-role="footer" data-theme="b" data-position="fixed"> 
+			<div class="pie">
+				<div class="logo-pie"><img src="img/logo-topclosinghub.png" alt="Top Hub"/></div>
+				<div>
+					<p>Help & Support</p>
+					<p>About</p>
+					<p>Logout</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</body> 
 </html>

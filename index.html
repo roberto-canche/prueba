@@ -24,17 +24,33 @@
     // Muestra un cuadro de dialogo personalizado
     //
     function showAlert() {
-    navigator.notification.alert(
-    'Eres el ganador!',     // mensaje (message)
-    alertDismissed,         // función 'callback' (alertCallback)
+      navigator.notification.alert(
+      'Eres el ganador!',     // mensaje (message)
+      alertDismissed,         // función 'callback' (alertCallback)
+      'Game Over',            // titulo (title)
+      'Cerrar'                // nombre del botón (buttonName)
+      );
+    }
+    // procesa el resultado del cuadro de confirmación
+    function onConfirm(button) {
+        alert('Has pulsado el botón ' + button);
+    }
+
+    // Muestra un cuadro de confirmación personalizado
+    //
+    function showConfirm() {
+        navigator.notification.confirm(
+    'Eres el ganador!',      // mensaje (message)
+    onConfirm,      // función 'callback' a llamar con el índice del botón pulsado (confirmCallback)
     'Game Over',            // titulo (title)
-    'Cerrar'                // nombre del botón (buttonName)
-    );
+        'Restart,Exit'          // botones (buttonLabels)
+        );
     }
 
     </script>
   </head>
   <body>
     <p><a href="#" onclick="showAlert(); return false;">Mostrar cuadro de dialogo</a></p>
+    <p><a href="#" onclick="showConfirm(); return false;">Mostrar cuadro de confirmación</a></p>
   </body>
 </html>
